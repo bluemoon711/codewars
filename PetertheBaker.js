@@ -22,15 +22,6 @@ function cakes(recipe, available) {
   return Math.min.apply(Math, num);
 }
 
-function cakes(recipe, available) {
-  var num = [];
-  for (var el in recipe) {
-    if (!available[el]) return 0;
-    num.push(Math.floor(available[el] / recipe[el]));
-  }
-  return Math.min.apply(Math, num);
-}
-
 //Obtain smallest value from array:
 var min = Math.min.apply(Math, arr);
 const min = arr.reduce((a, b) => Math.min(a, b));
